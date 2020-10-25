@@ -2,20 +2,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 
 :root {
-    --dark-grayish-blue: #646775;
-    --light-grey: #dedede;
-    --vivid-orange: #FFB018;
-    --pale-orange: #FFE0A4;
-    --vivid-blue: #0c75ff;
-    --white: #FFFFFF;
-    --light-grayish-blue: #c4d1e1;
-    --light-grayish-blue-2: #e2ebf6;
-    --light-grayish-blue-3: #f5f8fb;
-    --light-grayish-blue-4: #d4e1f0;
-    --light-grayish-orange: #fbf4e8;
-    --grayish-blue: #aabacc;
-    --darker-grayish-blue: #93a3b5;
-    --very-dark-grayish-blue: #303446;
+	--dark-grayish-blue: #646775;
+	--light-grey: #dedede;
+	--vivid-orange: #FFB018;
+	--pale-orange: #FFE0A4;
+	--vivid-blue: #0c75ff;
+	--white: #FFFFFF;
+	--light-grayish-blue: #c4d1e1;
+	--light-grayish-blue-2: #e2ebf6;
+	--light-grayish-blue-3: #f5f8fb;
+	--light-grayish-blue-4: #d4e1f0;
+	--light-grayish-orange: #fbf4e8;
+	--grayish-blue: #aabacc;
+	--darker-grayish-blue: #93a3b5;
+	--very-dark-grayish-blue: #303446;
 }
 
 body {
@@ -55,15 +55,15 @@ body {
 	justify-content: space-between;
 }
 
-.basic-package__titles {
+.basic-package__benefits {
 	padding-top: 115px;
 }
 
-.basic-package__titles span:not(:first-child) {
+.basic-package__benefits span:not(:first-child) {
 	margin-top: 40px;
 }
 
-.basic-package__titles span {
+.basic-package__benefits span {
 	color: var(--dark-grayish-blue);
 	display: block;
 	font-size: 20px;
@@ -193,6 +193,7 @@ body {
 	display: flex;
 	height: 120px;
 	justify-content: space-between;
+	overflow: hidden;
 	padding: 0 0 0 80px;
 	width: 100%;
 }
