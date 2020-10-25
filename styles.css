@@ -1,0 +1,311 @@
+@import 'https://necolas.github.io/normalize.css/8.0.1/normalize.css';
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+:root {
+	--dark-grayish-blue: #646775;
+	--light-grey: #dedede;
+	--vivid-orange: #FFB018;
+	--pale-orange: #FFE0A4;
+	--vivid-blue: #0c75ff;
+	--white: #FFFFFF;
+	--light-grayish-blue: #c4d1e1;
+	--light-grayish-blue-2: #e2ebf6;
+	--light-grayish-blue-3: #f5f8fb;
+	--light-grayish-blue-4: #d4e1f0;
+	--light-grayish-orange: #fbf4e8;
+	--grayish-blue: #aabacc;
+	--darker-grayish-blue: #93a3b5;
+	--very-dark-grayish-blue: #303446;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	max-width: 1310px;
+	margin: 0 auto;
+}
+
+.job-ad__title {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.publish-ad__job-ad {
+	color: var(--dark-grayish-blue);
+	font-size: 26px;
+}
+
+.publish-ad__option {
+	color: var(--very-dark-grayish-blue);
+	display: block;
+	font-size: 46px;
+	margin-top: 28px;
+}
+
+.job-ad__packages {
+	display: flex;
+	margin-top: 70px;
+}
+
+.job-ad__basic-package {
+	display: flex;
+	flex-basis: 500px;
+	justify-content: space-between;
+}
+
+.basic-package__benefits {
+	padding-top: 115px;
+}
+
+.basic-package__benefits span:not(:first-child) {
+	margin-top: 40px;
+}
+
+.basic-package__benefits span {
+	color: var(--dark-grayish-blue);
+	display: block;
+	font-size: 20px;
+}
+
+.basic-package__specs {
+	background: transparent;
+	border-radius: 7px;
+	border: 1px solid var(--light-grey);
+	box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.1), inset 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+	padding: 25px;
+	width: 235px;
+}
+
+.crown-icon {
+	border-radius: 50%;
+	height: 14px;
+	padding: 5px;
+	width: 14px;
+}
+
+.basic-specs__header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.basic-specs__header svg {
+	background-color: var(--pale-orange);
+	fill: var(--vivid-orange);
+}
+
+.basic-specs__header span {
+	color: var(--vivid-orange);
+	font-size: 20px;
+}
+
+.basic-price {
+	font-size: 22px;
+}
+
+.basic-package__icons {
+	margin-left: 10px;
+	margin-top: 38px;
+}
+
+.basic-package__icons svg {
+	display: block;
+	margin-top: 47px;
+	width: 15px;
+}
+
+.basic-package__icons .not-included {
+	fill: var(--dark-grayish-blue);
+}
+
+.color--blue {
+	color: var(--vivid-blue);
+}
+
+.job-ad__packages-offers {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	margin-left: 32px;
+}
+
+.card {
+	align-items: center;
+	border-radius: 7px;
+	display: flex;
+	position: relative;
+}
+
+.card:not(:first-child) {
+	margin-top: 20px;
+}
+
+.card:hover {
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+}
+
+.radio {
+	align-items: center;
+	appearance: none;
+	background: var(--white);
+	border-radius: 50%;
+	cursor: pointer;
+	display: flex;
+	font-size: 16px;
+	height: 28px;
+	justify-content: center;
+	left: 14px;
+	outline: none;
+	position: absolute;
+	width: 28px;
+}
+
+.radio::after {
+	border: 3px solid var(--white);
+	border-top: 0;
+	border-left: 0;
+	content: '';
+	display: block;
+	height: 10px;
+	transform: rotate(45deg);
+	width: 4px;
+}
+
+.radio:checked {
+	background: var(--vivid-blue);
+	border-color: var(--vivid-blue);
+}
+
+.radio .card:hover .radio {
+	border-color: var(--light-grayish-blue);
+}
+
+.radio .card:hover .radio:checked {
+	border-color: var(--vivid-blue);
+}
+
+.offer-details {
+	align-items: center;
+	border-radius: 7px;
+	border: 2px solid var(--light-grayish-blue-2);
+	cursor: pointer;
+	display: flex;
+	height: 120px;
+	justify-content: space-between;
+	overflow: hidden;
+	padding: 0 0 0 80px;
+	width: 100%;
+}
+
+.offer-details :not(:first-child) {
+	margin: 10px 0;
+}
+
+.radio:checked~.offer-details {
+	border-color: var(--vivid-blue);
+}
+
+.details-block {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: center;
+}
+
+.details-block span:first-child {
+	margin-bottom: 12px;
+}
+
+.offer-total {
+	display: flex;
+	height: 100%;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.offer-total .details-block:nth-child(2) {
+	margin-right: 30px;
+	text-align: right;
+}
+
+.offer-sub-total {
+	background-color: var(--light-grayish-blue-3);
+	border-left: 1px solid var(--light-grayish-blue-4);
+	flex-basis: 200px;
+	height: 100%;
+	padding-right: 28px;
+	text-align: right;
+}
+
+.saving {
+	background-color: var(--light-grayish-orange);
+	border-radius: 7px;
+	color: var(--vivid-orange);
+	font-weight: 500;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	width: 115px;
+}
+
+.best-price {
+	align-items: center;
+	background-color: var(--vivid-orange);
+	border-radius: 7px;
+	color: var(--light-grayish-orange);
+	display: flex;
+	height: 34px;
+	justify-content: center;
+	line-height: 34px;
+	text-align: center;
+	width: 140px;
+}
+
+.best-price svg {
+	background-color: var(--white);
+	fill: var(--vivid-orange);
+	margin-right: 5px;
+}
+
+.package-name {
+	font-weight: 500;
+	text-align: center;
+}
+
+.total,
+.sub-total {
+	color: var(--grayish-blue);
+}
+
+.total-price {
+	color: var(--darker-grayish-blue);
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+.sub-total-price {
+	color: var(--very-dark-grayish-blue);
+	font-weight: 500;
+	font-size: 23px;
+}
+
+.action-button {
+	margin-bottom: 74px;
+	margin-top: 45px;
+	text-align: center;
+}
+
+.action-button button {
+	background-color: var(--vivid-blue);
+	border-radius: 10px;
+	border: none;
+	color: var(--white);
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: 500;
+	height: 65px;
+	outline: none;
+	width: 420px;
+}
